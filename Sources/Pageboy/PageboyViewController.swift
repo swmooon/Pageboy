@@ -121,7 +121,7 @@ open class PageboyViewController: UIViewController {
     /// Whether user interaction is enabled on the page view controller.
     ///
     /// Default is TRUE
-    open var isUserInteractionEnabled: Bool = true {
+    open var isUserInteractionEnabled: Bool = false {
         didSet {
             pageViewController?.scrollView?.isUserInteractionEnabled = isUserInteractionEnabled
         }
@@ -129,7 +129,7 @@ open class PageboyViewController: UIViewController {
     /// Whether scroll is enabled on the page view controller.
     ///
     /// Default is TRUE.
-    open var isScrollEnabled: Bool = true {
+    open var isScrollEnabled: Bool = false {
         didSet {
             pageViewController?.scrollView?.isScrollEnabled = isScrollEnabled
         }
