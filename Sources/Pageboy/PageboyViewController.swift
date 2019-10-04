@@ -108,15 +108,15 @@ open class PageboyViewController: UIViewController {
     
     /// Whether the page view controller is currently being touched.
     open var isTracking: Bool {
-        return pageViewController?.scrollView?.isTracking ?? false
+        return false
     }
     /// Whether the page view controller is currently being dragged.
     open var isDragging: Bool {
-            return pageViewController?.scrollView?.isDragging ?? false
+        return false
     }
     // Wether the user isn't dragging (touch up) but page view controller is still moving.
     open var isDecelerating: Bool {
-        return pageViewController?.scrollView?.isDecelerating ?? false
+        return false
     }
     /// Whether user interaction is enabled on the page view controller.
     ///
